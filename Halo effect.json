@@ -1,0 +1,35 @@
+{
+  "task": "Create a Background with a Dynamic Halo Effect",
+  "description": "Develop a self-contained HTML snippet that implements a dynamic, interactive background halo effect similar to the Vanta.js Halo effect.",
+  "instructions": [
+    "Implement the core background effect:",
+    "  - Create a full-screen container (`position: fixed`, `top: 0`, `left: 0`, `width: 100vw`, `height: 100vh`, `z-index: 1`) to hold the effect.",
+    "  - Use the Vanta.js library (specifically the HALO effect) to generate the dynamic background.",
+    "  - The effect should be visually characterized by a glowing, particle-based halo, likely centered or following mouse/touch movements.",
+    "Configure the Vanta.js HALO effect with specific parameters:",
+    "  - Enable `mouseControls`, `touchControls`, and disable `gyroControls`.",
+    "  - Set `minHeight` and `minWidth` (e.g., 200.00).",
+    "  - Define the `backgroundColor` (e.g., black `0x0`).",
+    "  - Set the `baseColor` of the halo (e.g., a purple/violet like `0xa78bfa`).",
+    "  - Adjust the `size` and `amplitudeFactor` parameters to match the visual density and movement intensity.",
+    "Ensure the background container is positioned correctly:",
+    "  - Place it as a fixed background element, typically behind other page content.",
+    "  - Use an appropriate `z-index` (e.g., `z-index: 1`) to ensure it renders behind foreground elements.",
+    "Include necessary external libraries:",
+    "  - Link to the Three.js library (required by Vanta.js).",
+    "  - Link to the Vanta.js library core.",
+    "  - Link to the specific Vanta.js HALO effect script (`vanta.halo.min.js`).",
+    "Output Requirements:",
+    "  - Provide a complete, valid HTML snippet.",
+    "  - Include the HTML structure for the background container.",
+    "  - Include the necessary `<script>` tags to load the required libraries (Three.js, Vanta.js core, Vanta.js HALO).",
+    "  - Include an inline `<script>` tag to initialize the VANTA.HALO effect on the designated container element once the page loads.",
+    "  - The output should demonstrate the active, dynamic halo background effect when viewed in a browser."
+  ],
+  "example_logic_summary": [
+    "Create a fixed-position DIV to serve as the effect canvas.",
+    "Load Three.js, Vanta.js core, and Vanta.js HALO scripts.",
+    "Initialize VANTA.HALO on the container DIV using `VANTA.HALO({ el: '#container-id', ...options })` after the scripts load and the DOM is ready.",
+    "Configure options like `mouseControls: true`, `baseColor`, `backgroundColor`, `size`, etc., to achieve the desired visual style."
+  ]
+}
