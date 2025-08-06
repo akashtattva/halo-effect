@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Vanta.js Halo Effect</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
   body {
     margin: 0;
@@ -35,11 +36,26 @@
     text-shadow: 
       0 0 10px rgba(255, 255, 255, 0.5),
       0 0 20px rgba(255, 255, 255, 0.3),
-      0 0 30px rgba(255, 255, 255, 0.2);
+      0 0 30px rgba(255, 255, 255,.2);
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
     filter: blur(0.5px);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
+  }
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    #content h1 {
+      font-size: 3.5rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #content h1 {
+      font-size: 2.5rem;
+      padding: 0.5rem 1rem;
+    }
   }
 </style>
 </head>
